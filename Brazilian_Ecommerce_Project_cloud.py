@@ -16,10 +16,10 @@ from streamlit_pandas_profiling import st_profile_report
 model_classification = joblib.load('Brazilian Ecommerce Classification.bkl')
 model_clustering = joblib.load('Brazilian Ecommerce Clustering.bkl')
 sidebar = st.sidebar
-mode = sidebar.radio('Mode', ['EDA', 'Classification', 'Clustering'])
+mode = sidebar.radio('Mode', ['Exploration de données', 'Classification', 'Clustering'])
 st.markdown("<h1 style='text-align: center; color: #ff0000;'></h1>", unsafe_allow_html=True)
 
-if mode == "EDA":
+if mode == "Exploration de données":
 
     def main():
 
